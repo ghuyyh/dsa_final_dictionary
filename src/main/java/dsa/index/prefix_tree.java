@@ -4,15 +4,15 @@ import java.util.List;
 
 import dsa.model.entry;
 
-public class trie implements dict_index {
+public class prefix_tree implements dict_index {
 
     @Override
-    public void build(List<entry> entries) {
+    public void build() {
         //
     }
 
     @Override
-    public List<entry> searchPrefix(String prefix, int k) {
+    public List<entry> search(String prefix, int k) {
         //
         return null;
     }
@@ -31,6 +31,10 @@ public class trie implements dict_index {
     @Override
     public void clear() {
         //
+    }
+
+    @Override
+    public void delete(String word) {
     }
 
 }

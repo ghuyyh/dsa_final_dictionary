@@ -7,12 +7,14 @@ import dsa.model.entry;
 public interface dict_index {
 
 
-    void build(List<entry> entries);
+    void build();
 
 
-    List<entry> searchPrefix(String prefix, int k);
+    List<entry> search(String prefix, int k);
 
     void add(entry item);
+
+    void delete(String word);
 
 
     int size();
